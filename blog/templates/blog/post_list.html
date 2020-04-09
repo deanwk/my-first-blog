@@ -7,11 +7,21 @@
             <h1><a href="/">DEANOS BLOG</a></h1>
         </div>
 
+        {% for post in posts %}
+        <div>
+            <p>pushlished: {{ post.published_ }}</p>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+        {% endfor %}
+        
+
+
         <div>
             <p>published: 09.04.2020</p>
             <h2><a href="">New beginnings!:</a></h2>
             <p>Welcome to my new blog, which I create whilst learning on DjanoGirls (even though I'm a
-                man HaHa!) Hopefully I will learn to code fluently in HTML, Python and Java. :D</p>
+                man HaHa!) Hopefully I will learn to code fluently in Python and Java. :D</p>
         </div>
 
     </body>
